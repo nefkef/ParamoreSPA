@@ -1,172 +1,195 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
-<title>PARAMORE</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href=".\styles.css"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paramore</title>
+  <meta name="description" content="Unofficial fan site about the band Paramore. University web development project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-<nav class="nav">
-  <a href="#home">Αρχική</a>
-  <a href="#biography">Βιογραφία</a>
-  <a href="#discography">Δισκογραφία</a>
-  <a href="#photos">Φωτογραφίες</a>
-  <a href="#links">Σύνδεσμοι</a>
-  <a href="#management">Διαχείριση</a>
+<header class="topbar">
+  <span class="brand">PARAMORE</span>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    <span class="lang-el">Μενού</span><span class="lang-en">Menu</span>
+  </button>
+</header>
+
+<nav class="nav" id="site-nav" aria-label="Main">
+  <span class="nav-brand">PARAMORE</span>
+  <a href="#home"><span class="lang-el">Αρχική</span><span class="lang-en">Home</span></a>
+  <a href="#biography"><span class="lang-el">Βιογραφία</span><span class="lang-en">Biography</span></a>
+  <a href="#discography"><span class="lang-el">Δισκογραφία</span><span class="lang-en">Discography</span></a>
+  <a href="#photos"><span class="lang-el">Φωτογραφίες</span><span class="lang-en">Photos</span></a>
+  <a href="#links"><span class="lang-el">Σύνδεσμοι</span><span class="lang-en">Links</span></a>
+  <a href="#management"><span class="lang-el">Διαχείριση</span><span class="lang-en">Admin</span></a>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-lang="el" aria-pressed="true">ΕΛ</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
 </nav>
 
 <main>
+  <!-- HOME -->
   <section id="home" class="content-section">
     <h1>PARAMORE</h1>
-            <p>
-                Καλωσορίσατε στην ιστοσελίδα του συγκροτήματος Paramore! Έναν χώρο που αφιερώνεται στη μουσική, τη δημιουργικότητα και το πάθος για την τέχνη.
-            </p>
-            Στη σελίδα μας, θα ανακαλύψετε την συναρπαστική πορεία του συγκροτήματος Paramore και θα εξερευνήσετε τις μουσικές τους επιτυχίες.<br>
-            Ευχαριστούμε που είστε εδώ μαζί μας. Καλή περιήγηση!
-          </p>
-          <img src=".\paramore4.webp">
-  </section>
-  
-  <section id="biography" class="content-section hidden">
-    <h1>Βιογραφία</h1>
-    <p>
-     Οι Paramore είναι ένα δημοφιλές αμερικανικό ροκ συγκρότημα. Οι μουσικοί έλαβαν πραγματική αναγνώριση στις αρχές της δεκαετίας του 2000, όταν ένα από τα κομμάτια ακούστηκε στη νεανική ταινία "Twilight".<br>
-     Η ιστορία του συγκροτήματος Paramore είναι μια συνεχής εξέλιξη, μια αναζήτηση του εαυτού μας, η κατάθλιψη, η αποχώρηση και η επιστροφή των μουσικών. Παρά τη μακρά και ακανθώδη διαδρομή, οι σολίστες «κρατούν το στίγμα τους» και ανανεώνουν τακτικά τη δισκογραφία τους με νέους δίσκους.
-    </p>
-    <p><h2>Η ιστορία της δημιουργίας και της σύνθεσης της ομάδας Paramore</h2></p>
-
-    <p> 
-      Η Paramore δημιουργήθηκε το 2004 στο Franklin. Στις απαρχές της ομάδας είναι:<br>
-
-      Hayley Williams (φωνητικά, πλήκτρα)<br>
-      Taylor York (κιθάρα)<br>
-      Zach Farro (κρουστά)<br>
-      Ο καθένας από τους σολίστ, πριν δημιουργήσει τη δική του ομάδα, «ξετρελάθηκε» με τη μουσική και ονειρεύτηκε το δικό του γκρουπ. Ο Taylor και ο Zach ήταν υπέροχοι στο να παίζουν μουσικά όργανα. Η Hayley Williams τραγουδάει από την παιδική του ηλικία. Η κοπέλα αλίευσε τις φωνητικές της ικανότητες χάρη στα μαθήματα φωνητικής που πήρε από τον Brett Manning, τον διάσημο Αμερικανό δάσκαλο.<br>
-    </p>
-    <p>
-       Πριν σχηματιστεί η Paramore, ο Williams και ο μελλοντικός μπασίστας Jeremy Davis έπαιζαν στο The Factory και οι αδερφοί Farro τελειοποίησαν την κιθάρα τους παίζοντας στο πίσω γκαράζ τους. Στη συνέντευξή της, η Hayley είπε:<br>
-       «Όταν είδα τα παιδιά, νόμιζα ότι ήταν τρελοί. Ήταν ακριβώς ίδιοι με εμένα. Τα παιδιά έπαιζαν συνεχώς τα όργανά τους και φαινόταν ότι δεν τους ενδιέφερε τίποτα άλλο στη ζωή. Το κυριότερο είναι να έχεις μια κιθάρα, ντραμς και λίγο φαγητό κοντά...».<br>
-    </p>
-    <p>
-      Στις αρχές της δεκαετίας του 2000, η ​​Hayley Williams υπέγραψε συμβόλαιο με την Atlantic Records ως σόλο καλλιτέχνης. Οι ιδιοκτήτες της ετικέτας είδαν ότι το κορίτσι είχε ισχυρές φωνητικές ικανότητες και χάρισμα. Ήθελαν να της κάνουν δεύτερη Μαντόνα. Ωστόσο, η Hayley ονειρευόταν κάτι εντελώς διαφορετικό - ήθελε να παίξει εναλλακτική ροκ και να δημιουργήσει το δικό της συγκρότημα.
-    </p>
-    <p>
-      Η εταιρεία Atlantic Records άκουσε την επιθυμία του νεαρού ερμηνευτή. Στην πραγματικότητα, από εκείνη τη στιγμή ξεκίνησε η ιστορία της δημιουργίας της ομάδας Paramore.
-    </p>
-    <p>
-      Στο αρχικό στάδιο, το συγκρότημα περιελάμβανε: Hayley Williams, κιθαρίστα και δευτερεύοντα τραγουδιστή Josh Farro, ρυθμικό κιθαρίστα Jason Bynum, μπασίστα Jeremy Davis και ντράμερ Zach Farro.
-    </p>
-    <p>
-      Είναι ενδιαφέρον ότι τη στιγμή της δημιουργίας της ομάδας Paramore, ο Zach ήταν μόλις 12 ετών. Δεν υπήρχε χρόνος να σκεφτώ το όνομα για πολύ καιρό. Το Paramore είναι το πατρικό όνομα ενός από τα μέλη του συγκροτήματος. Αργότερα, η ομάδα έμαθε για την ύπαρξη του ομοφώνου paramour, που σημαίνει «μυστικός εραστής».
-    </p>
-           
-  </section>
-  
-  <section id="discography" class="content-section hidden">
-    <h1>Δισκογραφία</h1>
-            <p>
-            <h2>Στούντιο άλμπουμς</h2>
-            <p>
-            All We Know Is Falling (2005)<br>
-            Riot! (2007)<br>
-            Brand New Eyes (2009)<br>
-            Paramore (2013)<br>
-            Self-Titled Deluxe (2014)<br>
-            After Laughter (2017)<br>
-            This Is Why (2022)
-            <p>
-            <h2>Live άλμπουμς</h2>
-            <p>
-            Live in the UK 2008 (2008)<br>
-            The Final Riot! (2008)<br>
-            <p>
-            <h2>Singles</h2>
-            <p>
-            Pressure (2005)<br>
-            Emergency (2005)<br>
-            All We Know (2006)<br>
-            Misery Business (2007)<br>
-            Hallelujah (2007)<br>
-            Crushcrushcrush (2007)<br>
-            That's What You Get (2008)<br>
-            Decode (2008)<br>
-            Ignorance (2009)<br>
-            Brick by Boring Brick (2009)<br>
-            The Only Exception (2010)<br>
-            Careful (2010)<br>
-            Playing God (2010)<br>
-            Monster (2011)<br>
-            Now (2013)<br>
-            Still Into You (2013)<br>
-            Ain't It Fun (2014)<br>
-            Hard Times (2017)<br>
-            
-            <p>
-            <h2>Singles club</h2>
-            <p>
-            Renegade (2011)<br>
-            Hello Cold World (2011)<br>
-            In the Mourning (2011)<br>
-            </p>
-            <p>&copy; 2024 Paramore. All rights reserved.</p>
-  </section>
-  
-  <section id="photos" class="content-section hidden">
-    <div class="photo-container">
-      <div class="row"> 
-        <div class="column">
-        <img src=".\paramore5.webp" style="width:100%">
-        <img src=".\paramore.webp"style="width:100%">
-        <img src=".\paramore1.jpg" style="width:100%">
-        <img src=".\paramore6.jpg" style="width:100%">
-        <img src=".\paramore7.jpg"  style="width:100%">
-        <img src=".\paramore2.jpg"  style="width:100%">
-        <img src=".\pararome3.jpg"style="width:100%">
-        </div>
+    <div class="lang-el">
+      <p>Καλώς ήρθατε στην ιστοσελίδα για το συγκρότημα Paramore, έναν χώρο αφιερωμένο στη μουσική, τη δημιουργικότητα και το πάθος για την τέχνη.</p>
+      <p>Εδώ θα ανακαλύψετε την πορεία του συγκροτήματος και θα εξερευνήσετε τις μουσικές του επιτυχίες. Ευχαριστούμε που είστε εδώ. Καλή περιήγηση!</p>
     </div>
-    
+    <div class="lang-en">
+      <p>Welcome to this website about Paramore, a place dedicated to music, creativity and a passion for art.</p>
+      <p>Here you can follow the band's story and explore its music. Thanks for visiting, and enjoy!</p>
+    </div>
+    <img class="hero" src="./paramore4.webp" alt="Paramore band members posing indoors">
   </section>
-  
-  <section id="links" class="content-section hidden">
-    <h1>Σύνδεσμοι</h1>
-    <p>Εδώ μπορείτε να βρείτε συνδέσμους σχετικά με τους Paramore.</p>
-    <h3>Social Media</h3>
-    <a href="https://www.instagram.com/paramore/?hl=el">Instagram</a><br>
-    <a href=" https://www.facebook.com/paramore/">Facebook</a><br>
-    <a href="https://www.twitter.com/paramore/?lang=el">Twitter</a><br>
-    <h3>Albums</h3>
-    <a href="https://www.youtube.com/watch?v=4EHIpDcZvB0&list=OLAK5uy_n5QKizLT84rE5kGfygyNQ39tbk1uYAPMI">All We Know Ss Falling(2005)</a><br>
-    <a href="https://www.youtube.com/watch?v=3Y0i0thFnNQ&list=OLAK5uy_mnlf0YWbd5k3jJg4p-ND4is97bBlnHQc8">Riot!(2007)</a><br>
-    <a href="https://www.youtube.com/watch?v=f5howHv3F54&list=OLAK5uy_mveVvF9X_kSFtIBDgbtC46CyXHTvN2iBM">Brand New Eyes(2009)</a><br>
-    <a href="https://www.youtube.com/watch?v=PaiOTGEnuJk&list=OLAK5uy_kvSodSg6OoxQ2hbAhPXr1qiaCviDcRXCs">Paramore(2013)</a><br>
-    <a href="https://www.youtube.com/watch?v=PaiOTGEnuJk&list=OLAK5uy_kA8wNtwzZbUs9SooiV1QSdmBZUfRCFt3Q">Self-Titled Deluxe(2014)</a><br>    
-    <a href="https://www.youtube.com/watch?v=Lvs2JJuZwJ0&list=OLAK5uy_nXh0BlkyhXIPQh8JAFU4BYptq5vkwLa1A">Sigles Club(2015)</a><br>
-    <a href="https://www.youtube.com/watch?v=AEB6ibtdPZc&list=OLAK5uy_k1w7hO8N1QJ-kUTlfa1wzy7TcYXRX5VOM">After Laughter(2017)</a><br>
-    <a href="https://www.youtube.com/watch?v=gCRNnOinpLs&list=OLAK5uy_kStkhREQ9SW1MAsO1aa7ZmybPRywZPL5o">This Is Why(2022)</a><br>
 
+  <!-- BIOGRAPHY -->
+  <section id="biography" class="content-section" hidden>
+    <h1><span class="lang-el">Βιογραφία</span><span class="lang-en">Biography</span></h1>
+    <div class="lang-el">
+      <p>Οι Paramore είναι αμερικανικό ροκ συγκρότημα από το Franklin του Tennessee. Έγιναν ευρύτερα γνωστοί το 2008, όταν το τραγούδι τους «Decode» ακούστηκε στην ταινία «Twilight».</p>
+      <h2>Η δημιουργία του συγκροτήματος</h2>
+      <p>Το συγκρότημα δημιουργήθηκε το 2004 από την τραγουδίστρια Hayley Williams, τον κιθαρίστα Josh Farro, τον ντράμερ Zac Farro και τον μπασίστα Jeremy Davis. Τα πρώτα χρόνια έπαιζε μαζί τους και ο κιθαρίστας Jason Bynum, ενώ ο Taylor York μπήκε επίσημα στο συγκρότημα το 2007. Όλα τα μέλη ήταν τότε έφηβοι.</p>
+      <p>Η Hayley Williams είχε υπογράψει συμβόλαιο με την Atlantic Records ως σόλο καλλιτέχνιδα το 2003. Η ίδια όμως ήθελε να παίζει εναλλακτικό ροκ μαζί με ένα συγκρότημα, και η εταιρεία τελικά το δέχτηκε. Τα περισσότερα άλμπουμ των Paramore κυκλοφόρησαν από τη Fueled by Ramen.</p>
+      <h2>Αλλαγές και εξέλιξη</h2>
+      <p>Η ιστορία των Paramore έχει πολλές αλλαγές στη σύνθεση. Τα αδέρφια Farro αποχώρησαν το 2010 και ο Jeremy Davis το 2015, ενώ ο Zac Farro επέστρεψε το 2017. Σήμερα το συγκρότημα αποτελείται από την Hayley Williams, τον Taylor York και τον Zac Farro.</p>
+      <p>Το όνομα «Paramore» προήλθε από το πατρικό επώνυμο της μητέρας ενός από τους πρώτους μπασίστες τους. Αργότερα έμαθαν ότι η λέξη «paramour» σημαίνει «κρυφός εραστής».</p>
+    </div>
+    <div class="lang-en">
+      <p>Paramore is an American rock band from Franklin, Tennessee. The band reached a much wider audience in 2008, when their song "Decode" was featured in the film "Twilight".</p>
+      <h2>How the band started</h2>
+      <p>The band was formed in 2004 by singer Hayley Williams, guitarist Josh Farro, drummer Zac Farro and bassist Jeremy Davis. Guitarist Jason Bynum played with them in the early years, and Taylor York officially joined in 2007. All of the members were teenagers at the time.</p>
+      <p>Hayley Williams had signed with Atlantic Records as a solo artist in 2003. She wanted to play alternative rock in a band instead, and the label agreed. Most of Paramore's albums were released through Fueled by Ramen.</p>
+      <h2>Changes over the years</h2>
+      <p>Paramore's line-up has changed many times. The Farro brothers left in 2010 and Jeremy Davis in 2015, while Zac Farro returned in 2017. Today the band is Hayley Williams, Taylor York and Zac Farro.</p>
+      <p>The name "Paramore" came from the maiden name of the mother of one of their first bass players. The band later learned that the word "paramour" means "secret lover".</p>
+    </div>
   </section>
-  
-  <section id="management" class="content-section hidden">
-    <h1>Διαχείριση του περιεχομένου</h1>
-    <p>Εδώ μπορείτε να διαχειριστείτε το περιεχόμενο της σελίδας.</p>
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <button type="submit">Sign In</button>
-      <button id="disconnect-button">Disconnect</button>
-    </form>
+
+  <!-- DISCOGRAPHY -->
+  <section id="discography" class="content-section" hidden>
+    <h1><span class="lang-el">Δισκογραφία</span><span class="lang-en">Discography</span></h1>
+
+    <h2><span class="lang-el">Στούντιο άλμπουμ</span><span class="lang-en">Studio albums</span></h2>
+    <ul class="list">
+      <li>All We Know Is Falling (2005)</li>
+      <li>Riot! (2007)</li>
+      <li>Brand New Eyes (2009)</li>
+      <li>Paramore (2013)</li>
+      <li>After Laughter (2017)</li>
+      <li>This Is Why (2023)</li>
+    </ul>
+
+    <h2><span class="lang-el">Ζωντανές ηχογραφήσεις</span><span class="lang-en">Live albums</span></h2>
+    <ul class="list">
+      <li>Live in the UK 2008 (2008)</li>
+      <li>The Final Riot! (2008)</li>
+    </ul>
+
+    <h2>Singles</h2>
+    <ul class="list columns">
+      <li>Pressure (2005)</li>
+      <li>Emergency (2005)</li>
+      <li>All We Know (2006)</li>
+      <li>Misery Business (2007)</li>
+      <li>Hallelujah (2007)</li>
+      <li>Crushcrushcrush (2007)</li>
+      <li>That's What You Get (2008)</li>
+      <li>Decode (2008)</li>
+      <li>Ignorance (2009)</li>
+      <li>Brick by Boring Brick (2009)</li>
+      <li>The Only Exception (2010)</li>
+      <li>Careful (2010)</li>
+      <li>Playing God (2010)</li>
+      <li>Monster (2011)</li>
+      <li>Now (2013)</li>
+      <li>Still Into You (2013)</li>
+      <li>Ain't It Fun (2014)</li>
+      <li>Hard Times (2017)</li>
+    </ul>
+
+    <h2>Singles Club (2011)</h2>
+    <ul class="list">
+      <li>Renegade</li>
+      <li>Hello Cold World</li>
+      <li>In the Mourning</li>
+    </ul>
+  </section>
+
+  <!-- PHOTOS -->
+  <section id="photos" class="content-section" hidden>
+    <h1><span class="lang-el">Φωτογραφίες</span><span class="lang-en">Photos</span></h1>
+    <div class="photo-grid">
+      <img src="./paramore5.webp" alt="Paramore photo 1" loading="lazy">
+      <img src="./paramore.webp" alt="Paramore photo 2" loading="lazy">
+      <img src="./paramore1.jpg" alt="Paramore photo 3" loading="lazy">
+      <img src="./paramore6.jpg" alt="Paramore photo 4" loading="lazy">
+      <img src="./paramore7.jpg" alt="Paramore photo 5" loading="lazy">
+      <img src="./paramore2.jpg" alt="Paramore photo 6" loading="lazy">
+      <img src="./pararome3.jpg" alt="Paramore photo 7" loading="lazy">
+    </div>
+  </section>
+
+  <!-- LINKS -->
+  <section id="links" class="content-section" hidden>
+    <h1><span class="lang-el">Σύνδεσμοι</span><span class="lang-en">Links</span></h1>
+    <p><span class="lang-el">Επίσημα κανάλια και άλμπουμ των Paramore.</span><span class="lang-en">Paramore's official channels and albums.</span></p>
+    <h2>Social media</h2>
+    <ul class="list">
+      <li><a href="https://www.instagram.com/paramore/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/paramore/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://x.com/paramore" target="_blank" rel="noopener">X (Twitter)</a></li>
+    </ul>
+    <h2><span class="lang-el">Άλμπουμ στο YouTube</span><span class="lang-en">Albums on YouTube</span></h2>
+    <ul class="list">
+      <li><a href="https://www.youtube.com/watch?v=4EHIpDcZvB0&amp;list=OLAK5uy_n5QKizLT84rE5kGfygyNQ39tbk1uYAPMI" target="_blank" rel="noopener">All We Know Is Falling (2005)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=3Y0i0thFnNQ&amp;list=OLAK5uy_mnlf0YWbd5k3jJg4p-ND4is97bBlnHQc8" target="_blank" rel="noopener">Riot! (2007)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=f5howHv3F54&amp;list=OLAK5uy_mveVvF9X_kSFtIBDgbtC46CyXHTvN2iBM" target="_blank" rel="noopener">Brand New Eyes (2009)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=PaiOTGEnuJk&amp;list=OLAK5uy_kvSodSg6OoxQ2hbAhPXr1qiaCviDcRXCs" target="_blank" rel="noopener">Paramore (2013)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=PaiOTGEnuJk&amp;list=OLAK5uy_kA8wNtwzZbUs9SooiV1QSdmBZUfRCFt3Q" target="_blank" rel="noopener">Paramore: Self-Titled Deluxe (2014)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=Lvs2JJuZwJ0&amp;list=OLAK5uy_nXh0BlkyhXIPQh8JAFU4BYptq5vkwLa1A" target="_blank" rel="noopener">Singles Club (2011)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=AEB6ibtdPZc&amp;list=OLAK5uy_k1w7hO8N1QJ-kUTlfa1wzy7TcYXRX5VOM" target="_blank" rel="noopener">After Laughter (2017)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=gCRNnOinpLs&amp;list=OLAK5uy_kStkhREQ9SW1MAsO1aa7ZmybPRywZPL5o" target="_blank" rel="noopener">This Is Why (2023)</a></li>
+    </ul>
+  </section>
+
+  <!-- MANAGEMENT / LOGIN -->
+  <section id="management" class="content-section" hidden>
+    <h1><span class="lang-el">Διαχείριση περιεχομένου</span><span class="lang-en">Content management</span></h1>
+
+    <div id="login-view">
+      <p><span class="lang-el">Συνδεθείτε ως διαχειριστής για να μπείτε στη σελίδα διαχείρισης.</span><span class="lang-en">Sign in as an administrator to open the admin page.</span></p>
+      <form id="login-form" class="login-form" novalidate>
+        <label for="username"><span class="lang-el">Όνομα χρήστη</span><span class="lang-en">Username</span></label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+        <label for="password"><span class="lang-el">Κωδικός</span><span class="lang-en">Password</span></label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+        <button type="submit" id="login-button"><span class="lang-el">Σύνδεση</span><span class="lang-en">Sign in</span></button>
+        <p class="form-message" id="login-message" role="alert" hidden></p>
+      </form>
+    </div>
+
+    <div id="admin-view" hidden>
+      <p class="welcome">
+        <span class="lang-el">Συνδεθήκατε ως</span><span class="lang-en">Signed in as</span>
+        <strong id="admin-name"></strong>.
+      </p>
+      <p><span class="lang-el">Η σύνδεση λήγει αυτόματα σε 2 ώρες.</span><span class="lang-en">Your session ends automatically after 2 hours.</span></p>
+      <button type="button" id="logout-button"><span class="lang-el">Αποσύνδεση</span><span class="lang-en">Sign out</span></button>
+    </div>
   </section>
 </main>
 
-<script src=".\main.js"></script>
+<footer class="site-footer">
+  <span class="lang-el">Ανεπίσημη ιστοσελίδα θαυμαστών, φτιαγμένη για πανεπιστημιακό μάθημα web development από τη Νεφέλη Κεφάλα. Οι φωτογραφίες ανήκουν στους δημιουργούς τους.</span>
+  <span class="lang-en">Unofficial fan site, built for a university web development course by Nefeli Kefala. Photos belong to their respective owners.</span>
+</footer>
 
+<script src="./main.js"></script>
 </body>
 </html>
-
-
-
